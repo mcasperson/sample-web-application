@@ -1,0 +1,9 @@
+buildscript {
+    dependencies {
+        // You'll need to ensure that this path points to the jar file created from
+        // the project at https://github.com/mcasperson/sample-gradle-plugin
+        classpath files('../sample-gradle-plugin/build/libs/sample-gradle-plugin.jar')
+
+    }
+}
+apply plugin: 'com.matthewcasperson.webplugin'
